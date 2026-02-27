@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC Business Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .hero {
+            padding: 60px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .contact {
+            background: #eee;
+            padding: 40px;
+            text-align: center;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ABC Business Company</h1>
+    <p>We Grow Your Business 🚀</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to Our Company</h2>
+    <p>Hum professional business solutions provide karte hain.</p>
+    <button onclick="contactAlert()">Contact Us</button>
+</section>
+
+<section class="services">
+    <div class="card">
+        <h3>Web Development</h3>
+        <p>Professional website design services.</p>
+    </div>
+    <div class="card">
+        <h3>Marketing</h3>
+        <p>Digital marketing solutions for your brand.</p>
+    </div>
+    <div class="card">
+        <h3>Consulting</h3>
+        <p>Business growth strategy consulting.</p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@abcbusiness.com</p>
+    <p>Phone: +91 9876543210</p>
+</section>
+
+<footer>
+    © 2026 ABC Business Company | All Rights Reserved
+</footer>
+
+<script>
+    function contactAlert() {
+        alert("Thanks for contacting us!");
+    }
+</script>
+
+</body>
+</html>
