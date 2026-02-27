@@ -1,94 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Sarkari Result</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<Body> {
-    margin: 0;
+<meta charset="UTF-8">
+<title>Sarkari Result Style Website</title>
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
     font-family: Arial, Helvetica, sans-serif;
-    background: #f2f2f2;
+    background:#f5f5f5;
 }
 
-/<Header>/
-<header> {
-    background: #ab183d;
-    color: white;
-    text-align: center;
-    padding: 15px;
+/* HEADER */
+.header{
+    background:#ab183d;
+    color:#fff;
+    text-align:center;
+    padding:15px 10px;
 }
 
-<header h1> {
-    margin: 0;
-    font-size: 32px;
+.header h1{
+    font-size:36px;
 }
 
-/< Menu >/
-<nav >{
-    background: black;
-    text-align: center;
-    padding: 10px 0;
+.header p{
+    font-size:14px;
 }
 
-<nav a> {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+/* MENU */
+.menu{
+    background:#000;
+    text-align:center;
+    padding:10px 0;
 }
 
-<nav a:hover> {
-    text-decoration: underline;
+.menu a{
+    color:#fff;
+    margin:0 12px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
 }
 
-/< Main Content >/
-.container {
-    width: 90%;
-    margin: 20px auto;
+.menu a:hover{
+    text-decoration:underline;
 }
 
-.box {
-    background: white;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
+/* MAIN */
+.main{
+    width:95%;
+    margin:20px auto;
 }
 
-.box h2 {
-    background: #ab183d;
-    color: white;
-    margin: 0;
-    padding: 10px;
-    font-size: 20px;
+/* BOX */
+.box{
+    background:#fff;
+    border:1px solid #ccc;
+    margin-bottom:20px;
 }
 
-.box ul {
-    list-style: none;
-    padding: 15px;
-    margin: 0;
+.box h2{
+    background:#ab183d;
+    color:#fff;
+    padding:10px;
+    font-size:20px;
 }
 
-.box ul li {
-    padding: 5px 0;
+.box ul{
+    list-style:none;
+    padding:15px;
 }
 
-.box ul li a {
-    color: #0000ee;
-    text-decoration: none;
+.box ul li{
+    padding:6px 0;
 }
 
-.box ul li a:hover {
-    text-decoration: underline;
+.box ul li a{
+    color:#0000ee;
+    text-decoration:none;
 }
 
-/< Footer >/
-footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}</footer>
+.box ul li a:hover{
+    text-decoration:underline;
+}
+
+/* FEATURED LINKS */
+.featured{
+    background:#fff;
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+.featured h2{
+    background:#000;
+    color:#fff;
+    padding:10px;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:10px;
+}
+
+.featured-grid a{
+    background:#e6e6e6;
+    padding:10px;
+    text-align:center;
+    text-decoration:none;
+    color:#000;
+    font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:12px;
+    margin-top:20px;
+    font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Sarkari Result</h1>
+    <p>www.sarkariresultstyle.com</p>
+</div>
+
+<!-- MENU -->
+<div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Latest Jobs</a>
+    <a href="#">Admit Card</a>
+    <a href="#">Results</a>
+    <a href="#">Answer Key</a>
+    <a href="#">Contact Us</a>
+</div>
+
+<!-- CONTENT -->
+<div class="main">
+
+    <div class="box">
+        <h2>Latest Jobs</h2>
+        <ul>
+            <li><a href="#">UP Police Constable Recruitment 2026</a></li>
+            <li><a href="#">Railway Group D Vacancy 2026</a></li>
+            <li><a href="#">SSC GD Recruitment 2026</a></li>
+            <li><a href="#">Army Agniveer Rally 2026</a></li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Results</h2>
+        <ul>
+            <li><a href="#">SSC GD Result 2026</a></li>
+            <li><a href="#">UP Police Result 2025</a></li>
+            <li><a href="#">Railway NTPC Result</a></li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Admit Card</h2>
+        <ul>
+            <li><a href="#">SSC CGL Admit Card</a></li>
+            <li><a href="#">Railway Group D Admit Card</a></li>
+            <li><a href="#">UP Police PET Admit Card</a></li>
+        </ul>
+    </div>
+
+    <div class="featured">
+        <h2>Important Links</h2>
+        <div class="featured-grid">
+            <a href="#">Bank Jobs</a>
+            <a href="#">Railway Jobs</a>
+            <a href="#">Police Jobs</a>
+            <a href="#">Defence Jobs</a>
+            <a href="#">State Govt Jobs</a>
+            <a href="#">Central Govt Jobs</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Sarkari Result Style Website | All Rights Reserved
+</div>
 
 </body>
 </html>
-
