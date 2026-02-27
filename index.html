@@ -5,53 +5,90 @@
     <title>My Sarkari Result</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<Body> {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
 
-<header>
-    <h1>My Sarkari Result</h1>
-    <p>www.mysarkariresult.com</p>
-</header>
+/<Header>/
+<header> {
+    background: #ab183d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Latest Jobs</a>
-    <a href="#">Admit Card</a>
-    <a href="#">Results</a>
-    <a href="#">Contact</a>
-</nav>
+<header h1> {
+    margin: 0;
+    font-size: 32px;
+}
 
-<div class="container">
+/< Menu >/
+<nav >{
+    background: black;
+    text-align: center;
+    padding: 10px 0;
+}
 
-    <div class="box">
-        <h2>Latest Jobs</h2>
-        <ul>
-            <li><a href="#">UP Police Constable Recruitment 2026</a></li>
-            <li><a href="#">Railway Group D Vacancy 2026</a></li>
-            <li><a href="#">SSC GD Recruitment 2026</a></li>
-        </ul>
-    </div>
+<nav a> {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    <div class="box">
-        <h2>Results</h2>
-        <ul>
-            <li><a href="#">SSC GD Result 2026</a></li>
-            <li><a href="#">UP Police Result 2025</a></li>
-        </ul>
-    </div>
+<nav a:hover> {
+    text-decoration: underline;
+}
 
-    <div class="box">
-        <h2>Admit Card</h2>
-        <ul>
-            <li><a href="#">Railway Group D Admit Card</a></li>
-            <li><a href="#">SSC CGL Admit Card</a></li>
-        </ul>
-    </div>
+/< Main Content >/
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
 
-</div>
+.box {
+    background: white;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
 
-<footer>
-    © 2026 My Sarkari Result | All Rights Reserved
-</footer>
+.box h2 {
+    background: #ab183d;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.box ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+.box ul li {
+    padding: 5px 0;
+}
+
+.box ul li a {
+    color: #0000ee;
+    text-decoration: none;
+}
+
+.box ul li a:hover {
+    text-decoration: underline;
+}
+
+/< Footer >/
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}</footer>
 
 </body>
 </html>
+
